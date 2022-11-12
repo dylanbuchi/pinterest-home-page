@@ -6,6 +6,6 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts", "src/"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "test", "dist", "dist/**/*spec.ts"],
+  "include": ["src/**/*", ".eslintrc.json"]
 }
