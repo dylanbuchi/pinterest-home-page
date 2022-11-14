@@ -2,7 +2,7 @@ import { FaBell, FaSearch, FaUser, FaCaretDown } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 
 import NavbarIcon from "./NavbarIcon";
-import pinterestLogo from "../../assets/images/pinterest-logo.png";
+import pinterestLogo from "../../assets/images/pinterest-logo.webp";
 import Search from "../Search";
 
 const Navbar = (): JSX.Element => {
