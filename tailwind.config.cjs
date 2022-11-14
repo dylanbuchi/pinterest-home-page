@@ -3,6 +3,11 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        phone: {
+          raw: "(min-width: 358px) and (max-width: 639px)",
+        },
+      },
       colors: {
         "icons-color": "#767676",
         "logo-color": "#cc1100",
