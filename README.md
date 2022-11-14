@@ -15,3 +15,7 @@ Live demo: https://pinterest-home-page.netlify.app/
 
 ## Mobile:
 <img src=https://user-images.githubusercontent.com/52018183/201731192-a5123dab-1318-4c29-8112-491068ca8b96.png with=500 height=500/>
+
+## Author
+
+-   Website - [Dylan Buchi](https://dylanbuchi.com/)
