@@ -5,28 +5,25 @@ import NavbarIcon from "./NavbarIcon";
 import pinterestLogo from "../../assets/images/pinterest-logo.webp";
 import Search from "../Search";
 
+import CreateBtnWithModal from "../CreateBtnWithModal";
+
 const Navbar = (): JSX.Element => {
   return (
     <div className="fixed w-full z-20 bg-white top-0 right-0">
       <nav className="py-2 px-4 flex justify-evenly items-center min-w-[323px]">
-        <div className="space-x-3 flex items-center mr-auto">
+        <div className="font-semibold space-x-3 flex items-center mr-auto">
           <img
             className="w-[2rem] h-[2rem] object-cover"
             src={pinterestLogo}
             alt="pinterest-logo"
           />
           <div className="sm:bg-home-bg-color hover:bg-icons-hover-color sm:hover:bg-home-bg-color px-3.5 py-2.5 rounded-full hover:cursor-pointer flex items-center justify-center space-x-1">
-            <p className="font-semibold sm:text-white">Home</p>
+            <p className=" sm:text-white">Home</p>
             <div className="sm:hidden">
               <FaCaretDown />
             </div>
           </div>
-          <div className="hidden hover:cursor-pointer sm:flex items-center justify-center space-x-1">
-            <p className="font-medium text-black">Create</p>
-            <div className="">
-              <FaCaretDown />
-            </div>
-          </div>
+          <CreateBtnWithModal />
         </div>
         <Search />
 
