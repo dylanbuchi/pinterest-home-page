@@ -19,7 +19,7 @@ const Search = (): JSX.Element => {
         placeholder="Search"
         value={search}
         type="text"
-        className="bg-inherit focus:text-red w-full m-1 rounded-full pl-1 outline-none"
+        className="placeholder:text-icons-color bg-inherit focus:text-red w-full m-1 rounded-full pl-1 outline-none"
       />
       <div
         className={`flex rounded-full p-1 items-center ${
