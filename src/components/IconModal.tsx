@@ -13,7 +13,7 @@ const IconModal = ({
     <div
       hidden={hide}
       className={`text-white text-center text-xs bg-home-bg-color rounded-md p-[0.6em] absolute ${
-        whiteSpaceWrap ? "bottom-[-4.9rem]" : "bottom-[-2.4rem]"
+        whiteSpaceWrap ? "bottom-[-4rem]" : "bottom-[-2.2rem]"
       }`}
     >
       <p
