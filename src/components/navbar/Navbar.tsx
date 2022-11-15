@@ -6,10 +6,14 @@ import pinterestLogo from "../../assets/images/pinterest-logo.webp";
 import Search from "../Search";
 
 import CreateBtnWithModal from "../CreateBtnWithModal";
+import IconModal from "../IconModal";
+import { useState } from "react";
 
 const Navbar = (): JSX.Element => {
+  const [hideModal, setHideModal] = useState(true);
+
   return (
-    <div className="fixed w-full z-20 bg-white top-0 right-0">
+    <div className="fixed w-full z-20 bg-white top-0 right-0 p-1">
       <nav className="py-2 px-4 flex justify-evenly items-center min-w-[323px]">
         <div className="font-semibold space-x-3 flex items-center mr-auto">
           <img
@@ -29,13 +33,20 @@ const Navbar = (): JSX.Element => {
 
         <div className="flex justify-around items-center flex-1 sm:flex-initial">
           <NavbarIcon icon={<FaSearch />} classes="grid sm:hidden" />
-          <NavbarIcon icon={<FaBell />} />
-          <NavbarIcon icon={<AiFillMessage />} />
-          <NavbarIcon icon={<FaUser />} />
+          <NavbarIcon name="Notifications" icon={<FaBell />} />
+          <NavbarIcon name="Messages" icon={<AiFillMessage />} />
+          <NavbarIcon name="Your profile" icon={<FaUser />} />
           <div
+            onMouseOver={() => setHideModal(false)}
+            onMouseLeave={() => setHideModal(true)}
             className={`text-icons-color grid place-items-center w-[1.8rem] h-[1.8rem] sm:w-[1.8rem] sm:h-[1.rem] hover:rounded-full hover:cursor-pointer hover:bg-icons-hover-color text-[1.5rem]`}
           >
             <FaCaretDown />
+            <IconModal
+              name="Accounts and more options"
+              hide={hideModal}
+              whiteSpaceWrap
+            />
           </div>
         </div>
       </nav>
