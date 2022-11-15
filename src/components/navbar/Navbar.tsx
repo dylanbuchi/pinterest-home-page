@@ -39,7 +39,7 @@ const Navbar = (): JSX.Element => {
           <div
             onMouseOver={() => setHideModal(false)}
             onMouseLeave={() => setHideModal(true)}
-            className={`text-icons-color grid place-items-center w-[1.8rem] h-[1.8rem] sm:w-[1.8rem] sm:h-[1.rem] hover:rounded-full hover:cursor-pointer hover:bg-icons-hover-color text-[1.5rem]`}
+            className={`text-icons-color grid place-items-center w-[1.8rem] h-[1.8rem] sm:w-[1.8rem] sm:h-[1.8rem] hover:rounded-full hover:cursor-pointer hover:bg-icons-hover-color text-[1.5rem]`}
           >
             <FaCaretDown />
             <IconModal
