@@ -10,6 +10,7 @@ import pin9 from "./taisiia-shestopal-ub6GOtZjUZI-unsplash.webp";
 import pin10 from "./raelle-gann-owens-uCeQ47oTS-4-unsplash.webp";
 import pin11 from "./robert-bye-ePXvFiKAsOY-unsplash.webp";
 import pin12 from "./josh-withers-S3gHPOLsp8k-unsplash.webp";
+import pin13 from "./pexels-matteo-milan-14353715.webp";
 
 export type TPin = string;
 const pins: TPin[] = [
@@ -25,6 +26,7 @@ const pins: TPin[] = [
   pin10,
   pin11,
   pin12,
+  pin13,
 ];
 
 export default pins;
