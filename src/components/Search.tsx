@@ -21,7 +21,11 @@ const Search = (): JSX.Element => {
         type="text"
         className="bg-inherit focus:text-red w-full m-1 rounded-full pl-1 outline-none"
       />
-      <div className="flex rounded-full hover:bg-[#cbcaca] p-1 items-center">
+      <div
+        className={`flex rounded-full p-1 items-center ${
+          search.length > 0 ? "hover:bg-[#cbcaca]" : ""
+        }`}
+      >
         <button hidden={search.length === 0} onClick={clearSearch}>
           <RiCloseCircleFill className="text-[1.5rem]" />
         </button>
